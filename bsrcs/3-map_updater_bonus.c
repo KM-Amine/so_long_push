@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   3-map_updater.c                                    :+:      :+:    :+:   */
+/*   3-map_updater_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 14:54:17 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/10 18:51:26 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 11:20:24 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 void	map_modifier(t_all_data *data, int clock)
 {
-	player_modifier(data, clock, 5);
+	enemy_modifier(data, clock, 50);
+	player_modifier(data, clock, 4);
 	finish_game(data, 0);
 }
 

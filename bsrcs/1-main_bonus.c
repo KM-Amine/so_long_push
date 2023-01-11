@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   1-main.c                                           :+:      :+:    :+:   */
+/*   1-main_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 11:23:10 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/10 18:53:16 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 12:07:14 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ int	render_frame(t_all_data *data)
 	static int	i;
 	static void	*image_set[50];
 
-	(void)data;
-	(void)image_set;
 	if (i % 1 == 0)
 	{
 		map_modifier(data, i);
@@ -45,7 +43,24 @@ void	data_intialisation(t_all_data *data, t_key *keys, t_enemy *enemies,
 	data->enemy = enemies;
 	ft_bzero(img, sizeof(t_image_info) * 10);
 	data->img = img;
-	data->exit_status = 0;
+}
+
+void	window_initialisation(t_all_data *data)
+{
+	data->mlx.mlx = mlx_init();
+	if (data->mlx.mlx == NULL)
+	{
+		free (data->map.map);
+		exit (EXIT_FAILURE);
+	}
+	data->mlx.mlx_win = mlx_new_window(data->mlx.mlx, data->map.resolution.x
+			* SPRITE_X, (data->map.resolution.y) * SPRITE_Y, "so_long");
+	if (data->mlx.mlx_win == NULL)
+	{
+		free (data->mlx.mlx);
+		free (data->map.map);
+		exit (EXIT_FAILURE);
+	}
 }
 
 int	main(int av, char **ac)
@@ -57,13 +72,15 @@ int	main(int av, char **ac)
 
 	data.map = map_checker(av, ac);
 	data_intialisation(&data, keys, enemies, img);
-	data.mlx.mlx = mlx_init();
+	enemy_spawner(&data.map);
+	enemy_collector(&data);
+	window_initialisation(&data);
 	data.mlx.mlx_win = mlx_new_window(data.mlx.mlx, data.map.resolution.x
-			* SPRITE_X, (data.map.resolution.y) * SPRITE_Y, "so_long");
+			* SPRITE_X, (data.map.resolution.y + 1) * SPRITE_Y, "so_long");
 	images_generator(&data);
-	mlx_hook(data.mlx.mlx_win, KeyPress, KeyPressMask, key_press, &data);
-	mlx_hook(data.mlx.mlx_win, KeyRelease, KeyReleaseMask, key_release, &data);
-	mlx_hook(data.mlx.mlx_win, DestroyNotify, NoEventMask, exit_cross, &data);
+	mlx_hook(data.mlx.mlx_win, 2, (1L << 0), key_press, &data);
+	mlx_hook(data.mlx.mlx_win, 3, (1L << 1), key_release, &data);
+	mlx_hook(data.mlx.mlx_win, 17, 0L, exit_cross, &data);
 	mlx_loop_hook(data.mlx.mlx, render_frame, &data);
 	mlx_loop(data.mlx.mlx);
 	total_clean(&data);

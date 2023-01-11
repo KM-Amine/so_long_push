@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   2-player_manager.c                                 :+:      :+:    :+:   */
+/*   2-player_manager_bonus.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 16:18:29 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/10 19:12:53 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 11:52:21 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ void	player_mouver(t_pos p, int x, int y, t_all_data *data)
 		i++;
 		data->text.mouvement = i;
 		data->text.coins = elment_counter(data->map.map, 'C');
-		ft_printf("Player mouved : %d times\n", i);
 		data->map.map[p.y][p.x] = '0';
 		data->map.map[p.y + y][p.x + x] = 'P';
 	}
@@ -55,12 +54,12 @@ void	set_exit(char **map)
 	get_cordonates(map, &p, 'E');
 	if (p.x == -1)
 		return ;
-	map[p.x][p.y] = 'G';
+	map[p.y][p.x] = 'G';
 }
 
 void	win_checker(t_all_data *data)
 {
-	char	**map;
+	char		**map;
 
 	map = data->map.map;
 	if (elment_counter(map, 'C') == 0)
@@ -68,7 +67,7 @@ void	win_checker(t_all_data *data)
 		set_exit(map);
 		if (elment_counter(map, 'G') == 0)
 		{
-			ft_printf("You won you collected all coins with %d moves",
+			ft_printf("You won you collected all coins  with %d moves",
 				data->text.mouvement);
 			total_clean(data);
 		}

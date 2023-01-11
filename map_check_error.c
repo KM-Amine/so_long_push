@@ -6,11 +6,11 @@
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 09:43:06 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/10 18:23:11 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 11:54:56 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "./includes/so_long.h"
 
 t_map_info	map_checker(int av, char **ac)
 {

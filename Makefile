@@ -48,39 +48,39 @@ LSRC = ft_atoi.c \
 	get_next_line_utils.c
 LOBJ = $(LSRC:%.c=libft/%.o)
 
-SRC = srcs/1-main.c \
-	srcs/2-key_manager.c \
-	srcs/2-player_manager.c \
-	srcs/3-map_updater.c \
-	srcs/4-image_animator.c \
-	srcs/4-image_generator.c \
-	srcs/5-image_render_background.c \
-	srcs/5-image_renderer.c \
-	srcs/map_check_analyser.c \
-	srcs/map_check_error.c \
-	srcs/map_check_handler.c \
-	srcs/map_check_path.c \
-	srcs/map_utils.c
+SRC = 1-main.c \
+	2-key_manager.c \
+	2-player_manager.c \
+	3-map_updater.c \
+	4-image_animator.c \
+	4-image_generator.c \
+	5-image_render_background.c \
+	5-image_renderer.c \
+	map_check_analyser.c \
+	map_check_error.c \
+	map_check_handler.c \
+	map_check_path.c \
+	map_utils.c
 
-OBJ = $(SRC:srcs/%.c=objs/%.o)
+OBJ = $(SRC:%.c=objs/%.o)
 
-BSRC = bsrcs/1-main.c \
-		bsrcs/2-enemy_direction.c \
-		bsrcs/2-enemy_manager.c \
-		bsrcs/2-enemy_movement.c \
-		bsrcs/2-key_manager.c \
-		bsrcs/2-player_manager.c \
-		bsrcs/3-map_updater.c \
-		bsrcs/4-image_animator.c \
-		bsrcs/4-image_generator.c \
-		bsrcs/5-image_render_background.c \
-		bsrcs/5-image_render_score.c \
-		bsrcs/5-image_renderer.c \
-		bsrcs/map_check_analyser.c \
-		bsrcs/map_check_error.c \
-		bsrcs/map_check_handler.c \
-		bsrcs/map_check_path.c \
-		bsrcs/map_utils.c \
+BSRC = bsrcs/1-main_bonus.c \
+		bsrcs/2-enemy_direction_bonus.c \
+		bsrcs/2-enemy_manager_bonus.c \
+		bsrcs/2-enemy_movement_bonus.c \
+		bsrcs/2-key_manager_bonus.c \
+		bsrcs/2-player_manager_bonus.c \
+		bsrcs/3-map_updater_bonus.c \
+		bsrcs/4-image_animator_bonus.c \
+		bsrcs/4-image_generator_bonus.c \
+		bsrcs/5-image_render_background_bonus.c \
+		bsrcs/5-image_render_score_bonus.c \
+		bsrcs/5-image_renderer_bonus.c \
+		bsrcs/map_check_analyser_bonus.c \
+		bsrcs/map_check_error_bonus.c \
+		bsrcs/map_check_handler_bonus.c \
+		bsrcs/map_check_path_bonus.c \
+		bsrcs/map_utils_bonus.c \
 
 BOBJ = $(BSRC:bsrcs/%.c=bobjs/%.o)
 
@@ -88,12 +88,11 @@ OBJDIR = objs
 BOBJDIR = bobjs
 
 all:  $(NAME)
-
 $(NAME): $(LIBFT) $(OBJ)
 	@$(CC) $(CFLAGS) $(LIBFT) $(OBJ) -lmlx -framework OpenGL -framework AppKit -o $(NAME)
 	@echo "\033[1;32m ----Mandatory created----- \033[0m"
 
-objs/%.o: srcs/%.c $(HEADER)
+objs/%.o: %.c $(HEADER)
 	@mkdir -p $(OBJDIR)
 	@$(CC) $(CFLAGS) -Imlx -c $< -o $@
 
@@ -104,7 +103,8 @@ libft/%.o: libft/%.c
 	@$(CC) $(LFLAGS) -c $< -o $@
 
 
-bonus : $(LIBFT) $(BOBJ)
+bonus : $(BNAME)
+$(BNAME) : $(LIBFT) $(BOBJ)
 	@$(CC) $(CFLAGS) $(LIBFT) $(BOBJ) -lmlx -framework OpenGL -framework AppKit -o $(BNAME)
 	@echo "\033[1;32m ----Bonus created----- \033[0m"
 bobjs/%.o: bsrcs/%.c $(HEADER)

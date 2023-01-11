@@ -6,11 +6,11 @@
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/04 16:00:18 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/10 17:58:49 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 11:55:01 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "./includes/so_long.h"
 
 void	contamination(char **map, t_pos p, int *count, char *set)
 {

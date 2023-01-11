@@ -6,11 +6,11 @@
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 15:30:42 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/10 18:53:10 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 08:52:46 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "./includes/so_long.h"
 
 void	simple_map_printer(void **image_set, t_all_data *data)
 {

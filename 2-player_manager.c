@@ -6,11 +6,11 @@
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 16:18:29 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/10 19:13:14 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 11:50:17 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "./includes/so_long.h"
 
 void	player_mouver(t_pos p, int x, int y, t_all_data *data)
 {
@@ -55,12 +55,12 @@ void	set_exit(char **map)
 	get_cordonates(map, &p, 'E');
 	if (p.x == -1)
 		return ;
-	map[p.x][p.y] = 'G';
+	map[p.y][p.x] = 'G';
 }
 
 void	win_checker(t_all_data *data)
 {
-	char	**map;
+	char		**map;
 
 	map = data->map.map;
 	if (elment_counter(map, 'C') == 0)

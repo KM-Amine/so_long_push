@@ -6,11 +6,11 @@
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 16:51:17 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/10 18:22:02 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 08:52:19 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "./includes/so_long.h"
 
 void	first_part(t_fpath	*p, t_all_data *data, int dir, int file)
 {
