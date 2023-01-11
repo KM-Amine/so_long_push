@@ -2,7 +2,7 @@ NAME = so_long
 BNAME = so_long_bonus
 CC = cc
 AR = ar rcs
-CFLAGS = -Wall -Wextra -Werror -I ./includes 
+CFLAGS = -Wall -Wextra -Werror -I .
 RM = rm -rf
 HEADER  = so_long.h
 
