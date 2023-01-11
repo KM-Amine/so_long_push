@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   2-key_manager.c                                    :+:      :+:    :+:   */
+/*   2-key_manager_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/08 09:16:56 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/10 17:49:08 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 12:29:32 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "../so_long.h"
 
 void	key_press_modifier(t_all_data *data, int p)
 {

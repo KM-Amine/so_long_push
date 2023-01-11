@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   4-image_generator.c                                :+:      :+:    :+:   */
+/*   4-image_generator_bonus.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 16:51:17 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/10 18:59:53 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 12:30:02 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "../so_long.h"
 
 void	first_part(t_fpath	*p, t_all_data *data, int dir, int file)
 {

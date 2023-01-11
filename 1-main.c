@@ -6,11 +6,11 @@
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 11:23:10 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/11 12:06:45 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 12:27:45 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./includes/so_long.h"
+#include "./so_long.h"
 
 int	render_frame(t_all_data *data)
 {

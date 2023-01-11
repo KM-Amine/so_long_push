@@ -6,11 +6,11 @@
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/08 09:16:56 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/11 08:52:07 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 12:28:00 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./includes/so_long.h"
+#include "./so_long.h"
 
 void	key_press_modifier(t_all_data *data, int p)
 {

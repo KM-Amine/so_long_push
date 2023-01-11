@@ -6,11 +6,11 @@
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 16:18:29 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/11 11:52:21 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 12:29:34 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "../so_long.h"
 
 void	player_mouver(t_pos p, int x, int y, t_all_data *data)
 {

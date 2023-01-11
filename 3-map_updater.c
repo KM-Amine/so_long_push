@@ -6,11 +6,11 @@
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 14:54:17 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/11 11:27:25 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 12:28:07 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./includes/so_long.h"
+#include "./so_long.h"
 
 void	map_modifier(t_all_data *data, int clock)
 {

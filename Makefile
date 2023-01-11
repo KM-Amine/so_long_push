@@ -4,7 +4,7 @@ CC = cc
 AR = ar rcs
 CFLAGS = -Wall -Wextra -Werror -I ./includes 
 RM = rm -rf
-HEADER  = includes/so_long.h
+HEADER  = so_long.h
 
 LFLAGS = -Wall -Wextra -Werror
 LIBFT = libft/libft.a 

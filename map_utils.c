@@ -6,11 +6,11 @@
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 19:39:12 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/11 11:54:52 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 12:28:42 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./includes/so_long.h"
+#include "./so_long.h"
 
 void	map_creator(char	**map, int i, char *str, int fd)
 {

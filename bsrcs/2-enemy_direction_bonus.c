@@ -6,11 +6,11 @@
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 15:48:17 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/11 09:24:59 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 12:29:16 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "../so_long.h"
 
 void	extreme_checker(t_all_data *data, char **map, t_enemy *en, int count)
 {

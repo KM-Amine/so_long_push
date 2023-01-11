@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   5-image_render_background.c                        :+:      :+:    :+:   */
+/*   5-image_render_background_bonus.c                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/08 14:20:59 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/10 17:51:32 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 12:30:04 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "../so_long.h"
 
 void	set_map_data(char **map, char c, char *set)
 {

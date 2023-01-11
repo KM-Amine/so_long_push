@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   map_check_analyser.c                               :+:      :+:    :+:   */
+/*   map_check_analyser_bonus.c                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 17:56:59 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/10 18:02:03 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 12:30:13 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "../so_long.h"
 
 void	map_structure(t_map_check *check, char **map)
 {

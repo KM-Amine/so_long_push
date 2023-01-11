@@ -6,11 +6,11 @@
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 19:39:17 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/11 11:54:59 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 12:28:35 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./includes/so_long.h"
+#include "./so_long.h"
 
 void	rectangular_map(t_map_check *check, char **map)
 {

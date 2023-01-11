@@ -6,14 +6,14 @@
 /*   By: mkhellou < mkhellou@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/04 14:09:49 by mkhellou          #+#    #+#             */
-/*   Updated: 2023/01/11 09:24:54 by mkhellou         ###   ########.fr       */
+/*   Updated: 2023/01/11 12:27:24 by mkhellou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
-# include "../libft/libft.h"
+# include "./libft/libft.h"
 # include <fcntl.h>
 # include <mlx.h>
 # include <time.h>
