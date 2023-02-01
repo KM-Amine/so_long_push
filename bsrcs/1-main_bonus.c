@@ -53,8 +53,6 @@ void	window_initialisation(t_all_data *data)
 		free (data->map.map);
 		exit (EXIT_FAILURE);
 	}
-	data->mlx.mlx_win = mlx_new_window(data->mlx.mlx, data->map.resolution.x
-			* SPRITE_X, (data->map.resolution.y) * SPRITE_Y, "so_long");
 	if (data->mlx.mlx_win == NULL)
 	{
 		free (data->mlx.mlx);
